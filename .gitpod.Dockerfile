@@ -11,4 +11,4 @@ RUN sudo apt-get update -y \
   && sudo apt-get install -y fastqc roary bedtools cd-hit ncbi-blast+ mcl parallel cpanminus prank mafft fasttree
 
   
-CMD ["roary", "fastqc" , "bedtools", "cd-hit", "ncbi-blast+", "mcl", "parallel", "cpanminus", "prank", "mafft", "fasttree"]
+CMD ["roary", "fastqc", "bedtools", "cd-hit", "ncbi-blast+", "mcl", "parallel", "cpanminus", "prank", "mafft", "fasttree"]
