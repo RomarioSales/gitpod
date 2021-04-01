@@ -9,4 +9,5 @@ FROM gitpod/workspace-full
 RUN sudo apt-get update -y \
   && sudo DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata \ 
   && sudo apt-get install -y fastqc roary bedtools cd-hit ncbi-blast+ mcl parallel cpanminus prank mafft fasttree
+  
 CMD ["roary", "fastqc" , "bedtools", "cd-hit", "ncbi-blast+", "mcl", "parallel", "cpanminus", "prank", "mafft", "fasttree"]
